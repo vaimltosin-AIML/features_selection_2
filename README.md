@@ -93,25 +93,11 @@ Target: Class (0 = non-diabetic, 1 = diabetic)
 
 # 🎯 Key Questions Addressed
 
-Cost Reduction
-
-Identifying essential measurements means clinics can reduce unnecessary testing, lowering patient costs and healthcare system expenses.
-
-Patient Experience
-
-Fewer required tests means less time in clinics, fewer needles, less medication interaction concerns—especially important for vulnerable populations.
-
-Clinical Clarity
-
-Knowing which factors actually drive diagnosis helps providers focus counseling on actionable risk factors patients can modify.
-
-Model Deployment
-
-Simpler models with fewer features run faster, require less computational power, and are easier to implement in electronic health records and mobile health apps.
-
-Regulatory Compliance
-
-Healthcare AI systems must be explainable. Models using only essential features are easier to validate, explain, and defend to regulators.
+Cost Reduction: Identifying essential measurements means clinics can reduce unnecessary testing, lowering patient costs and healthcare system expenses.
+Patient Experience: Fewer required tests means less time in clinics, fewer needles, less medication interaction concerns—especially important for vulnerable populations.
+Clinical Clarity: Knowing which factors actually drive diagnosis helps providers focus counseling on actionable risk factors patients can modify.
+Model DeploymentSimpler models with fewer features run faster, require less computational power, and are easier to implement in electronic health records and mobile health apps.
+Regulatory Compliance: Healthcare AI systems must be explainable. Models using only essential features are easier to validate, explain, and defend to regulators.
 
 What We Expect to Discover
 Glucose and BMI likely emerge as universally important across all methods—these are known clinical diabetes risk factors.
@@ -122,7 +108,6 @@ Ridge regression reveals which features the model actually relies on, balanced a
 Broader Implications Beyond Diabetes
 
 This methodology applies across healthcare and beyond:
-
 Cancer risk prediction: Which biomarkers matter most?
 Heart disease diagnosis: Which cardiac measurements are essential?
 Loan approval: Which financial factors actually predict repayment?
@@ -134,50 +119,34 @@ The principle is universal: in any domain, feature selection reveals what truly 
 # 📈 Methodological Approach
 
 The project employs strict machine learning practices:
-
 Clear Data Preparation: All features are extracted from the raw dataset with explicit feature naming and type conversion, ensuring reproducibility and clarity.
-
 Standardized Evaluation: Each method is applied to identical train-test splits, enabling direct comparison of results.
-
 No Data Leakage: All feature selection occurs on properly separated training data, simulating real-world scenarios.
-
 Transparent Reporting: Feature importance scores and rankings are displayed in interpretable formats.
-
 Multiple Perspectives: By examining three fundamentally different approaches, the project provides triangulation on feature importance.
+
 # 🔬 Real-World Applications
 
 Understanding feature selection has immediate practical applications:
-
 Model Deployment: Reducing features decreases model size and inference time, crucial for real-time applications and resource-constrained environments.
-
 Interpretability: Smaller models with fewer features are inherently easier to understand and explain to stakeholders and regulators.
-
-Data Collection: In business contexts, knowing which features matter allows organizations to focus data collection efforts on relevant information, reducing costs.
-
+Data Collection: In business contexts, knowing which features matter allows organizations to focus data collection efforts on relevant information, reducing costs
 Model Robustness: Removing noisy features can make models more robust to changes in data distribution and more stable across different datasets.
-
 Scientific Discovery: Identified important features point to underlying patterns and relationships in the domain, contributing to scientific understanding beyond just predictions.
 
 # 💡 Expected Insights
-
 More data is not always better. The right approach is finding the minimal set of essential measurements that preserve prediction accuracy while reducing complexity. This project demonstrates that multiple valid methods exist for making this discovery, and features that appear important across multiple methods are truly worth paying attention to.
 
 Through this analysis, we can expect to discover:
-
 Feature Ranking: Clear identification of which features carry the most predictive power for classification.
-
 Redundancy Patterns: Features that capture similar information and could be replaced by single representatives.
-
 Optimal Feature Count: The diminishing returns point where adding more features stops improving performance.
-
 Method Effectiveness: Comparative performance of different selection techniques and their appropriateness for this problem.
-
 Performance Trade-offs: Quantification of accuracy versus complexity trade-offs across different feature subsets.
 
 # 🎓 Learning Value
 
 Understanding which features matter has direct value:
-
 Screening Optimization - Reduce test panels while maintaining diagnostic accuracy
 Resource Planning - Allocate clinical resources toward high-value measurements
 Patient Counseling - Focus on modifiable risk factors that actually matter
@@ -185,12 +154,9 @@ Systems Design - Implement streamlined screening workflows in healthcare systems
 Reproducibility - Ensure screening protocols work consistently across different patient populations
 
 # 🌍 Broader Significance
-
 Feature selection is not just an optimization technique—it's a philosophy of modeling. This project embodies the principle that simpler, more interpretable models often outperform complex ones, a principle with applications far beyond classification:
-
 In healthcare: Identifying key health indicators for diagnosis
 In finance: Determining which factors truly drive market behavior
 In manufacturing: Finding critical quality indicators
 In research: Discovering which variables explain phenomena
-
 By demonstrating how to rigorously evaluate feature selection methods, this project equips practitioners with tools to build better models across diverse domains
