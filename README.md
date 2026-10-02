@@ -1,5 +1,5 @@
 
-#Feature Selection: Optimizing Machine Learning Models
+# Feature Selection: Optimizing Machine Learning Models
 
 A comprehensive machine learning project that investigates and compares multiple feature selection techniques to improve model efficiency, performance, and interpretability. This project demonstrates how strategic feature reduction can enhance machine learning workflows without sacrificing predictive accuracy.
 
